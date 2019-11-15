@@ -1,9 +1,17 @@
+'''
+@Author: your name
+@Date: 2019-10-25 09:01:10
+@LastEditTime: 2019-11-15 09:53:16
+@LastEditors: your name
+@Description: In User Settings Edit
+@FilePath: /AutoTextGenerate/src/dataset.py
+'''
 import torch
 import string
 from torch.utils import data
 from rnn import Model
 
-all_letters = string.ascii_letters + '.:\'\" !?'
+all_letters = string.ascii_letters + '.:\'\"\n !?'
 path = '../dataset/shakespeare.txt'
 
 char2index = {char:i for i, char in enumerate(all_letters)}
